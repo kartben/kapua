@@ -25,7 +25,7 @@ To create the Kapua base box run the script with 'base-box' as first parameter f
 
 ```
 $ cd $KAPUA_GITHUB_HOME_DIR
-$ cd org.eclipse.kapua.dev-tools/src/main/vagrant
+$ cd dev-tools/src/main/vagrant
 $ ./start.sh base-box
 ```
 
@@ -40,7 +40,7 @@ Once the base-box is created, from the same directory, it's possible to invoke t
 
 ```
 $ cd $KAPUA_GITHUB_HOME_DIR
-$ cd org.eclipse.kapua.dev-tools/src/main/vagrant
+$ cd dev-tools/src/main/vagrant
 $ ./start.sh develop
 ```
 
@@ -48,7 +48,7 @@ The machine can be recreated every time you need (running the same commands) or,
 If you choose to start it again instead of recreating, you should enter the Vagrant machine and start manually the H2 service (please replace ${H2DB_VERSION} with the correct value):
 ```
 $ cd $KAPUA_GITHUB_HOME_DIR
-$ cd org.eclipse.kapua.dev-tools/src/main/vagrant
+$ cd dev-tools/src/main/vagrant
 $ vagrant up
 $ vagrant ssh
 $ java -cp /usr/local/h2database/h2database-${H2DB_VERSION}/h2*.jar org.h2.tools.Server -baseDir /home/vagrant/H2/kapua -webAllowOthers -tcpAllowOthers -tcpPort 3306 &
@@ -98,7 +98,7 @@ As for the development machine, once the base-box is created, from the same dire
 
 ```
 $ cd $KAPUA_GITHUB_HOME_DIR
-$ cd org.eclipse.kapua.dev-tools/src/main/vagrant
+$ cd dev-tools/src/main/vagrant
 $ ./start.sh demo
 ```
 
@@ -106,7 +106,7 @@ The machine can be recreated every time you need (running the same commands) or,
 If you choose to start it again instead of recreating, you should enter the Vagrant machine and start manually the H2 service (please replace ${H2DB_VERSION} with the correct value):
 ```
 $ cd $KAPUA_GITHUB_HOME_DIR
-$ cd org.eclipse.kapua.dev-tools/src/main/vagrant
+$ cd dev-tools/src/main/vagrant
 $ vagrant up
 $ vagrant ssh
 $ java -cp /usr/local/h2database/h2database-${H2DB_VERSION}/h2*.jar org.h2.tools.Server -baseDir /home/vagrant/H2/kapua -webAllowOthers -tcpAllowOthers -tcpPort 3306 &
